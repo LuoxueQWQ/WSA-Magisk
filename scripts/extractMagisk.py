@@ -74,7 +74,7 @@ with zipfile.ZipFile(magisk_zip) as zip:
     extract_as(
         zip, f"lib/{ abi_map[arch][0] }/libmagisk.so", "magisk64", "magisk")
     extract_as(
-        zip, f"lib/{ abi_map[arch][1] }/libmagisk.so", "magisk32", "magisk")
+        zip, f"lib/{ abi_map[arch][1] }/libmagisk32.so", "magisk32", "magisk")
     standalone_policy = False
     try:
         zip.getinfo(f"lib/{ abi_map[arch][0] }/libmagiskpolicy.so")
