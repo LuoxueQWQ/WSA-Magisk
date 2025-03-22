@@ -33,7 +33,8 @@ if not magisk_ver:
 if magisk_ver == "stable" or magisk_ver == "beta" or magisk_ver == "canary" or magisk_ver == "debug":
     try:
         magisk_link = json.loads(requests.get(
-            f"https://github.com/topjohnwu/magisk-files/raw/master/{magisk_ver}.json").content)['magisk']['link']
+            https://github.com/HuskyDG/magisk-files/blob/master/canary.json
+            f"https://github.com/HuskyDG/magisk-files/raw/master/{magisk_ver}.json").content)['magisk']['link']
     except Exception:
         print("Failed to fetch from GitHub API, fallbacking to jsdelivr...")
         magisk_link = json.loads(requests.get(
