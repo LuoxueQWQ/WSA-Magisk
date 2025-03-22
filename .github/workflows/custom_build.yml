@@ -101,7 +101,7 @@ jobs:
           fi
 
       - name: Upload Artifact 🤌
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           name: ${{ steps.wsa.outputs.artifact }}
           path: ./output/${{ steps.wsa.outputs.artifact }}.${{ inputs.compress-format }}
