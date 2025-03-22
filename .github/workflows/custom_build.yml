@@ -105,4 +105,4 @@ jobs:
         with:
           name: ${{ steps.wsa.outputs.artifact }}
           path: ./output/${{ steps.wsa.outputs.artifact }}.${{ inputs.compress-format }}
-          python-version: '3.10'
+          python-version: '3.8'
